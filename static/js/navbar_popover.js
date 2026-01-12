@@ -1,25 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const popoverTargets = document.querySelectorAll(
-    '.nav-link[href="#products"], ' +
-    '.nav-link[href="#categories"], ' +
-    '.nav-link[href="#aboutus"], ' +
-    'a[href="#account"], ' +
-    'a[href="#cart"], ' +
-    '.powered-by'
-  );
+  const popoverTargets = [
+    { id: "nav-products", key: "products" },
+    { id: "nav-categories", key: "categories" },
+    { id: "nav-aboutus", key: "aboutus" },
+    { id: "nav-account", key: "account" },
+    { id: "nav-cart", key: "cart" },
+    { id: "nav-poweredby", key: "poweredby" },
+  ];
 
-  popoverTargets.forEach((el) => {
-    // Remove default browser tooltip if any
+  popoverTargets.forEach((item) => {
+    const el = document.getElementById(item.id);
+    if (!el) return;
+
+    // Remove default tooltip
     el.removeAttribute("title");
 
     const popover = new bootstrap.Popover(el, {
       trigger: "hover",
       placement: "bottom",
       html: true,
-      content: getPopoverContent(el),
+      content: getPopoverContent(item.key),
     });
 
-    // Dismiss on click anywhere else
+    // Dismiss popover on outside click
     document.addEventListener("click", function (e) {
       if (!el.contains(e.target)) {
         popover.hide();
@@ -27,47 +30,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  function getPopoverContent(el) {
-    const href = el.getAttribute("href");
-
-    if (el.classList.contains("powered-by")) {
-      return `
-        <div>
-          Precision health & science-backed care<br>
-          <small>Click to learn more</small>
-        </div>
-      `;
-    }
-
-    switch (href) {
-      case "#products":
+  function getPopoverContent(key) {
+    switch (key) {
+      case "products":
         return `
           <div>
             Browse our full nutrition range
           </div>
         `;
-      case "#categories":
+      case "categories":
         return `
           <div>
             Diabetes, Protein, Snacks, Kids
           </div>
         `;
-      case "#aboutus":
+      case "aboutus":
         return `
           <div>
             Our mission & health science
           </div>
         `;
-      case "#account":
+      case "account":
         return `
           <div>
             Login, orders & profile
           </div>
         `;
-      case "#cart":
+      case "cart":
         return `
           <div>
             View your selected items
+          </div>
+        `;
+      case "poweredby":
+        return `
+          <div>
+            Precision health & science-backed care<br>
+            <small>Click to learn more</small>
           </div>
         `;
       default:
