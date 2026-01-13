@@ -1,71 +1,73 @@
 <!-- Enhanced Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid px-3 px-lg-4">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid px-3 px-lg-4">
 
-      <!-- Brand -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        NutriAura
-        <span id="nav-poweredby" class="powered-by ms-2" data-bs-toggle="modal" data-bs-target="#twinHealthModal">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">
+      <div class="d-flex align-items-center gap-2">
+        <span>NutriAura</span>
+        <span id="nav-poweredby" class="powered-by" data-bs-toggle="modal" data-bs-target="#twinHealthModal">
           <i class="bi bi-patch-check-fill"></i>
           Powered by Twin Health
         </span>
-      </a>
+      </div>
+    </a>
 
-      <!-- Mobile Toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarContent" aria-controls="navbarContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Mobile Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarContent" aria-controls="navbarContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <!-- Navbar Content -->
-      <div class="collapse navbar-collapse" id="navbarContent">
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarContent">
 
-        <!-- Navigation Links -->
-        <ul class="navbar-nav ms-lg-4">
-          <li class="nav-item">
-            <a id="nav-products" class="nav-link active" href="#products">All Products</a>
-          </li>
-          <li class="nav-item">
-            <a id="nav-categories" class="nav-link" href="#categories">Categories</a>
-          </li>
+      <!-- Navigation Links -->
+      <ul class="navbar-nav ms-lg-4">
         <li class="nav-item">
-            <a id="nav-aboutus" class="nav-link" href="#aboutus">About Us</a>
+          <a id="nav-products" class="nav-link active" href="#products">All Products</a>
         </li>
-        </ul>
+        <li class="nav-item">
+          <a id="nav-categories" class="nav-link" href="#categories">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a id="nav-aboutus" class="nav-link" href="#aboutus">About Us</a>
+        </li>
+      </ul>
 
-        <!-- Search Bar -->
-        <div class="search-wrapper ms-lg-auto">
-          <input
-            class="form-control search-input"
-            type="search"
-            placeholder="Search for healthy products..."
-            aria-label="Search">
-          <i class="bi bi-search search-icon"></i>
-        </div>
+      <!-- Search Bar -->
+      <div class="search-wrapper ms-lg-auto">
+        <input
+          class="form-control search-input"
+          type="search"
+          placeholder="Search for healthy products..."
+          aria-label="Search">
+        <i class="bi bi-search search-icon"></i>
+      </div>
 
-        <!-- Icon Group -->
-        <div class="d-flex align-items-center gap-2 ms-lg-3 icon-group">
-          
-          <!-- Account -->
-          <a id="nav-account" href="#account" class="icon-btn" title="My Account">
-            <i class="bi bi-person-circle"></i>
-          </a>
+      <!-- Icon Group -->
+      <div class="icon-group ms-lg-3">
+        
+        <!-- Account -->
+        <a id="nav-account" href="#account" class="icon-btn" title="My Account">
+          <i class="bi bi-person-circle"></i>
+        </a>
 
-          <!-- Wishlist -->
-        <!--  <a href="#wishlist" id="nav-wishlist" class="icon-btn" title="Wishlist">
-            <i class="bi bi-heart"></i>
-          </a>
+        <!-- Wishlist -->
+        <!--
+        <a href="#wishlist" id="nav-wishlist" class="icon-btn" title="Wishlist">
+          <i class="bi bi-heart"></i>
+        </a>
         -->
 
-          <!-- Cart -->
-          <a id="nav-cart" href="#cart" class="icon-btn" title="Shopping Cart">
-            <i class="bi bi-cart3"></i>
-            <span class="cart-badge">2</span>
-          </a>
+        <!-- Cart -->
+        <a id="nav-cart" href="#cart" class="icon-btn" title="Shopping Cart">
+          <i class="bi bi-cart3"></i>
+          <span class="cart-badge">2</span>
+        </a>
 
-        </div>
       </div>
     </div>
-  </nav>
-  
+  </div>
+</nav>
