@@ -9,9 +9,4 @@ sample*/
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: var(--soft-bg);
-      padding-top: 141px; /* 40px top bar + 76px navbar */
-    }
-
-    body.top-bar-closed {
-    padding-top: 76px; /* Only navbar height */
     }
