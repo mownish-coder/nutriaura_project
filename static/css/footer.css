@@ -1,0 +1,125 @@
+.nutriaura-footer {
+  background-image: url("../images/footer.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* ⚠️ Fixed attachment causes issues on mobile */
+  /* background-attachment: fixed; */
+
+  min-height: 400px;
+  position: relative;
+  color: var(--primary-green);
+}
+
+
+
+
+
+
+.footer-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary-green);
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: var(--primary-green);
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--primary-green);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: black;
+  padding-left: 6px;
+}
+
+.footer-divider {
+  border-color: rgba(0, 0, 0, 0.2);
+  margin: 2rem 0;
+}
+
+.footer-bottom-text {
+  font-size: 0.85rem;
+  color: var(--primary-green);
+}
+
+.footer-social a {
+  color: var(--primary-green);
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--accent-gold);
+  transform: translateY(-3px);
+}
+
+
+.footer-link {
+  color: var(--primary-green);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.nutriaura-quote {
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--primary-green);
+  border-left: 4px solid var(--accent-gold);
+  padding-left: 12px;
+  margin: 1rem 0;
+  opacity: 0.95;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/*
+.nutriaura-quote:hover {
+  color: var(--accent-gold) !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+  background: red;
+  cursor: pointer;
+}
+*/
+
+.footer-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+.connect-icons a {
+  font-size: 1.3rem;
+  margin-right: 12px;
+  margin-top: 200px;
+  color: var(--primary-green);
+}
+
+.connect-icons a:hover {
+  color: black;
+  transform: translateY(-2px);
+}
