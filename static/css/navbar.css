@@ -43,6 +43,18 @@
   transform: scale(1.05);
 }
 
+/* Navbar Logo */
+.navbar-logo {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .navbar-logo {
+  transform: scale(1.1);
+}
+
 .powered-by {
   font-size: 0.75rem;
   color: #6c757d;
